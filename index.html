@@ -265,9 +265,13 @@ Error message and password prompt
 
 <li>$:/core/ui/EditorToolbar/transcludify</li>
 
+<li>$:/core/ui/icons/video</li>
+
 <li>$:/core/ui/PageTemplate</li>
 
 <li>$:/core/wiki/title</li>
+
+<li>$:/css/jacq-css</li>
 
 <li>$:/DefaultTiddlers</li>
 
@@ -10661,6 +10665,9 @@ Error message and password prompt
 /&gt;
 </pre>
 </div>
+<div created="20201227090845380" creator="Jacq" modified="20201227093442201" modifier="Jacq" tags="$:/tags/icon" title="$:/core/ui/icons/video">
+<pre>&lt;span class=&quot;jw-icon&quot;&gt;{{$:/core/images/video}}&lt;/span&gt;</pre>
+</div>
 <div created="20170128165447442" creator="twMat" modified="20170128165506600" modifier="twMat" title="$:/core/ui/PageTemplate">
 <pre>\define containerClasses()
 tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
@@ -10719,6 +10726,18 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
 </div>
 <div created="20170125072548242" creator="twMat" modified="20170125072550077" modifier="twMat" title="$:/core/wiki/title" type="text/vnd.tiddlywiki">
 <pre>{{$:/SiteTitle}}</pre>
+</div>
+<div created="20201227092746670" creator="Jacq" modified="20201227093844626" modifier="Jacq" tags="$:/tags/Stylesheet" title="$:/css/jacq-css">
+<pre>&lt;pre&gt;.jw-icon {
+display: inline-block; 
+width: 1.2em; height: 1.2em; 
+vertical-align: middle;
+margin-bottom: .2em;
+}
+
+.jw-icon svg { max-height: 100%; }
+
+&lt;/pre&gt;</pre>
 </div>
 <div created="20160129095057570" creator="twMat" modified="20200210072445963" modifier="Jacq" title="$:/DefaultTiddlers">
 <pre>Welcome</pre>
@@ -10879,7 +10898,7 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
 <div created="20190531082851375" modified="20200209114859742" title="$:/Setup/newts">
 <pre>therapy</pre>
 </div>
-<div created="20160325102921349" creator="twMat" modified="20190704125518921" modifier="Mat von TWaddle" tags="$:/tags/Stylesheet" title="$:/SiteStylesheet" type="text/vnd.tiddlywiki">
+<div created="20160325102921349" creator="twMat" modified="20201227092720998" modifier="Jacq" tags="$:/tags/Stylesheet" title="$:/SiteStylesheet" type="text/vnd.tiddlywiki">
 <pre>&lt;pre&gt;/* Tweak headings h2, h3, 4h / !!, !!!, !!!! */
 .tc-tiddler-body h2 {margin-bottom:-.2em; margin-top:1.2em;}
 .tc-tiddler-body h3 {margin-bottom:-.4em; margin-top:1.4em;}
@@ -10891,12 +10910,12 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
 /* Navigate bottom tiddler to viewport top */
 .tc-story-river { margin-bottom:60vh; }
 
-/* Enable [[|link for inappropriate title]] */
+/* Enable [[|link for inappropriate title]]
 .tc-tiddlylink:empty:after {
   content:&quot;🡕&quot;;
   font-style:normal;
   margin-left:-2px;
-}
+} */
 
 /* TW-version added to site title */
 .tc-site-title:before {
@@ -10914,17 +10933,17 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
 <div created="20170612192911097" modified="20200209114924965" title="$:/SiteTitle">
 <pre>Therapy</pre>
 </div>
-<div created="20201227082524507" creator="Jacq" modified="20201227082524507" modifier="Jacq" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20201227082524507" creator="Jacq" modified="20201227093821798" modifier="Jacq" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
 <div created="20201227073551677" creator="Jacq" modified="20201227073551677" modifier="Jacq" title="$:/state/image-picker/system-1566243175">
 <pre>show</pre>
 </div>
-<div created="20201226121715797" creator="Jacq" modified="20201227073400620" modifier="Jacq" title="$:/state/showeditpreview">
-<pre>yes</pre>
+<div created="20201226121715797" creator="Jacq" modified="20201227093553756" modifier="Jacq" title="$:/state/showeditpreview">
+<pre>no</pre>
 </div>
-<div created="20201227082524507" creator="Jacq" modified="20201227082524507" modifier="Jacq" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20201227082524507" creator="Jacq" modified="20201227093821798" modifier="Jacq" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
 <div created="20201226100456433" creator="Jacq" modified="20201226100456433" modifier="Jacq" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
@@ -10932,14 +10951,14 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
 <div created="20201226100459202" creator="Jacq" modified="20201227010800458" modifier="Jacq" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
-<div created="20201226144642770" creator="Jacq" modified="20201226144943192" modifier="Jacq" title="$:/state/tab/moresidebar-1850697562">
+<div created="20201226144642770" creator="Jacq" modified="20201227092328883" modifier="Jacq" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20201226103808349" creator="Jacq" modified="20201227081636179" modifier="Jacq" title="$:/state/tab/sidebar--595412856">
+<div created="20201226103808349" creator="Jacq" modified="20201227092340419" modifier="Jacq" title="$:/state/tab/sidebar--595412856">
 <pre>ToC</pre>
 </div>
-<div created="20201226121801281" creator="Jacq" modified="20201227064722306" modifier="Jacq" title="$:/state/toc/ToC-DBT--2129731618">
-<pre>open</pre>
+<div created="20201226121801281" creator="Jacq" modified="20201227093024562" modifier="Jacq" title="$:/state/toc/ToC-DBT--2129731618">
+<pre>close</pre>
 </div>
 <div created="20201226121802805" creator="Jacq" modified="20201226121849158" modifier="Jacq" title="$:/state/toc/ToC/DBT-Four Modules--2129731618">
 <pre>close</pre>
@@ -10992,7 +11011,7 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$
 <div created="20160407102858708" creator="t" modified="20200209114940665" modifier="Jac" title="$:/status/UserName">
 <pre>Jacq</pre>
 </div>
-<div created="20201227074717682" creator="Jacq" list="$:/AdvancedSearch $:/core/images/cancel-button $:/core/images/video DBT" modified="20201227090232677" modifier="Jacq" title="$:/StoryList">
+<div created="20201227093453647" creator="Jacq" list="$:/AdvancedSearch $:/css/jacq-css DBT" modified="20201227093755497" modifier="Jacq" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200209123107971" creator="Jacq" list="$:/core/ui/EditorToolbar/paint $:/core/ui/EditorToolbar/opacity $:/core/ui/EditorToolbar/line-width $:/core/ui/EditorToolbar/rotate-left $:/core/ui/EditorToolbar/clear $:/core/ui/EditorToolbar/bold $:/plugins/tiddlywiki/markdown/EditorToolbar/bold $:/core/ui/EditorToolbar/italic $:/plugins/tiddlywiki/markdown/EditorToolbar/italic $:/core/ui/EditorToolbar/strikethrough $:/core/ui/EditorToolbar/underline $:/core/ui/EditorToolbar/superscript $:/core/ui/EditorToolbar/subscript $:/core/ui/EditorToolbar/mono-line $:/plugins/tiddlywiki/markdown/EditorToolbar/mono-line $:/core/ui/EditorToolbar/linkify $:/core/ui/EditorToolbar/transcludify $:/core/ui/EditorToolbar/mono-block $:/core/ui/EditorToolbar/quote $:/plugins/tiddlywiki/markdown/EditorToolbar/quote $:/core/ui/EditorToolbar/list-bullet $:/plugins/tiddlywiki/markdown/EditorToolbar/list-bullet $:/core/ui/EditorToolbar/list-number $:/plugins/tiddlywiki/markdown/EditorToolbar/list-number $:/core/ui/EditorToolbar/heading-1 $:/plugins/tiddlywiki/markdown/EditorToolbar/heading-1 $:/core/ui/EditorToolbar/heading-2 $:/plugins/tiddlywiki/markdown/EditorToolbar/heading-2 $:/core/ui/EditorToolbar/heading-3 $:/plugins/tiddlywiki/markdown/EditorToolbar/heading-3 $:/core/ui/EditorToolbar/heading-4 $:/plugins/tiddlywiki/markdown/EditorToolbar/heading-4 $:/core/ui/EditorToolbar/heading-5 $:/plugins/tiddlywiki/markdown/EditorToolbar/heading-5 $:/core/ui/EditorToolbar/heading-6 $:/plugins/tiddlywiki/markdown/EditorToolbar/heading-6 $:/core/ui/EditorToolbar/link $:/core/ui/EditorToolbar/picture $:/core/ui/EditorToolbar/stamp $:/core/ui/EditorToolbar/size $:/core/ui/EditorToolbar/editor-height $:/core/ui/EditorToolbar/excise $:/core/ui/EditorToolbar/preview $:/core/ui/EditorToolbar/preview-type $:/core/ui/EditorToolbar/more" modified="20200210051858433" modifier="Jacq" title="$:/tags/EditorToolbar">
@@ -11474,24 +11493,22 @@ According to [[HealthLine|https://www.healthline.com/health/depression/cognitive
 
 &lt;&lt;list-links &quot;[tag&lt;currentTiddler&gt;]&quot;&gt;&gt;</pre>
 </div>
-<div color="#0096ff" created="20200210010207410" creator="Jacq" icon="$:/images/icon/band-aid" list="[[DBT Skills Manual]] [[DBT Orientation]] [[Four Modules]]" modified="20201227090410292" modifier="Jacq" tags="ToC" title="DBT">
+<div color="#0096ff" created="20200210010207410" creator="Jacq" icon="$:/images/icon/band-aid" list="[[DBT Skills Manual]] [[DBT Orientation]] [[Four Modules]]" modified="20201227093615223" modifier="Jacq" tags="ToC" title="DBT">
 <pre>Dialectical Behavior Therapy was created by [[Marsha Linehan |https://behavioraltech.org/about-us/founded-by-marsha/]] to help suicidal people, though it can help multiple conditions (according to the many research studies on it, some done by Marsha or her students and other studies done by outside people, aka not Marsha or her students). If you'd like to know more about Marsha:
-
-&lt;style&gt;svg {max-height: 100%;}&lt;/style&gt;
 
 * [[Marsha's Profile on University of Washington|https://blogs.uw.edu/linehan]]
 * [[Books &amp; Websites for consumers on the DBT-Linehan Board of Certification site|http://dbt-lbc.org/index.php?page=101155]]
 * [[Marsha's research clinic|http://depts.washington.edu/uwbrtc/]]
 * [[How to find help on the The Linehan Institute site|https://linehaninstitute.org/find-help/]]
-* &lt;span style=&quot;display: inline-block; width: 1.2em;  vertical-align: middle;&quot;&gt;{{$:/core/images/video}} &lt;/span&gt; [[Marsha Explains DBT at UoW conference|https://youtu.be/hM_Pj_MvpcM?t=58]]
+* {{$:/core/ui/icons/video}} [[Marsha Explains DBT at UoW conference|https://youtu.be/hM_Pj_MvpcM?t=58]]
 
 !! DBT &amp; The Skills
 
 The full treatment involves:
 
-* One-on-one sessions with a therapist once a week to discuss what is going on in the patient's life that week (with a therapist who is part of a group of DBT therapists that meet with each other weekly to prevent burnout)
-* That same therapist being available for phone calls from their patients (within reason) to help in crisis moments
-* Weekly skills group meetings that follow a structured lesson plan, similar to a classroom setting where the teacher has a syllabus ready before the class even begins. 
+* ''One-on-one'' sessions with a therapist once a week to discuss what is going on in the patient's life that week (with a therapist who is part of a group of DBT therapists that meet with each other weekly to prevent burnout)
+* That same therapist being available for ''phone calls'' from their patients (within reason) to help in crisis moments
+* ''Weekly skills group'' meetings that follow a structured lesson plan, similar to a classroom setting where the teacher has a syllabus ready before the class even begins. 
 
 While DBT is most effective with the above intensive treatment regiment, according to the studies by Marsha, the most critical part is learning and using the DBT Skills. She even has studies which prove that patients can see improvement even if all they have is learning the skills alone. The skills by themselves can help. 
 
